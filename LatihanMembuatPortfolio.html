@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eee;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #333;
+        padding: 13px 0;
+        box-shadow: 0 2px 3px rgba(0,0,0,.5);
+      }
+      
+      nav .judul {
+        color: #eee;
+        font-size: 30px;
+        width: 30%;
+        pointer-events: none;
+        text-shadow: 0 0 3px rgba(255,255,255,.7);
+      }
+        
+      nav ul {
+        list-style: none;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        padding-top: 5px;
+      }
+      nav ul li a {
+        color: #eee;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        color: #333;
+        background-color: #eee;
+        border-radius: 2px;
+      }
+      header {
+        margin-top: 50px;
+        text-align: center;
+        background-color: #ddd;
+        padding: 50px 0;
+        
+      }
+      header .image {
+        background-image: url(user2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: auto;
+      }
+      header h2 {
+        padding-top: 10px;
+        font-size: 25px;
+      }
+      header p {
+        color: #333;
+        font-size: 18px;
+        padding-top: 5px;
+      }
+      .about {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px 0;
+        box-sizing: border-box;
+      }
+      hr {
+        width: 100px;
+        margin: 10px auto;
+        color: #333;
+        border-bottom: 1px solid #333;
+        
+      }
+      .about .inform {
+        display: flex;
+        justify-content: center;
+        color: #333;
+        margin-top: 20px;
+      }
+      .about p {
+        width: 40%;
+        padding: 10px;
+        letter-spacing: 1px;
+      }
+      
+      .gallery {
+        padding: 50px;
+      }
+      .gallery h3 {
+        text-align: center;
+      }
+      .gallery .card {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 28px;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 14px;
+        box-sizing: border-box;
+        
+      }
+      .gallery .image {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .gallery .card img {
+        width: 190px;
+        height: 190px;
+        border-radius: 5px;
+      }
+      .gallery .card p {
+        font-size: 12px;
+        color: #111;
+        text-align: center;
+        padding-top: 3px;
+      }
+      .contact {
+        background-color: #fff;
+        padding: 50px;
+      }
+      
+      .contact h3 {
+        text-align: center;
+      }
+      .contact hr {
+       margin-bottom: 50px;
+      }
+      form {
+        width: 65%;
+        margin: auto;
+      }
+      form input, textarea {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        outline: none;
+        font-size: 20px;
+      }
+      form textarea {
+        padding-bottom: 50px;
+      }
+      form button {
+        padding: 6px 15px;
+        border-radius: 3px;
+        border: 1px solid #666;
+        outline: none;
+        cursor: pointer;
+        color: #666;
+        background: none;
+        transition: .2s;
+      }
+      form button:hover {
+        transform: scale(.9);
+      }
+      
+      
+     footer {
+       width: 100%;
+       padding: 13px;
+       background-color: #333;
+       text-align: center;
+       color: #eee;
+     }
+     footer p a {
+       color: #eee;
+     }
+      
+    </style>
+</head>
+
+<body>
+  
+  <nav>
+    <h1 class="judul">SHAM</h1>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Gallery</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <header>
+    <div class="image"></div>
+    <h2>Shaeful Amin</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing</p>
+  </header>
+  
+  <section class="about" id="about">
+    <h3>About</h3>
+    <hr>
+    <div class="inform">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+    </div>
+  </section>
+  
+  <section class="gallery">
+    <h3>Gallery</h3>
+    <hr>
+    <div class="image">
+      <div class="card">
+        <img src="image1.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image2.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image3.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image4.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image5.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image6.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image7.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image8.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <img src="image9.jpeg">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <hr>
+    <form>
+      <input type="text" placeholder="Masukkan nama">
+      <input type="text" placeholder="Masukkan email">
+      <textarea cols="0" row="50" placeholder="Masukkan pesan"></textarea>
+      
+      <button type="submit">Kirim</button>
+    </form>
+
+  </section>
+  
+  <footer>
+      <p>Copyright 2020 by <a href="">shaeful amin</a>.</p>
+  </footer>
+
+</body>
+
+</html>
